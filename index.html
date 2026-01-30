@@ -32,27 +32,26 @@
     </div>
 
     <!-- Start of FlowHunt integration -->
-    <script id="fh-chatbot-script-610c9ee6-35e9-45af-b186-fade108a5ed4">
-    // Get the current script element
-    var currentScript = document.currentScript || document.getElementById('fh-chatbot-script-610c9ee6-35e9-45af-b186-fade108a5ed4');
+<script id="fh-chatbot-script-610c9ee6-35e9-45af-b186-fade108a5ed4">
+// Get the current script element
+var currentScript = document.currentScript || document.getElementById('fh-chatbot-script-610c9ee6-35e9-45af-b186-fade108a5ed4');
 
-    // Load the chatbot initialization script
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = 'https://app.flowhunt.io/api/chatbot/610c9ee6-35e9-45af-b186-fade108a5ed4?workspace_id=90163fe7-f3b0-4d57-b72b-b502b5282832&v=2';
-    script.onload = function() {  // Initialize the chatbot and get the manager instance
-      window.FHChatbot_610c9ee6_35e9_45af_b186_fade108a5ed4.init(function(chatbotManager) {});
-    };
+// Load the chatbot initialization script
+var script = document.createElement('script');
+script.async = true;
+script.src = 'https://app.flowhunt.io/api/chatbot/610c9ee6-35e9-45af-b186-fade108a5ed4?workspace_id=90163fe7-f3b0-4d57-b72b-b502b5282832&v=2';
+script.onload = function() {  // Initialize the chatbot and get the manager instance
+  window.FHChatbot_610c9ee6_35e9_45af_b186_fade108a5ed4.init(function(chatbotManager) {});
+};
 
-    // Insert the script right after the current script element
-    if (currentScript && currentScript.parentNode) {
-      currentScript.parentNode.insertBefore(script, currentScript.nextSibling);
-    } else {
-      // Fallback to document.head if no script element is found
-      document.head.appendChild(script);
-    }
-    </script>
-    <!-- End of FlowHunt integration -->
-
+// Insert the script right after the current script element
+if (currentScript && currentScript.parentNode) {
+  currentScript.parentNode.insertBefore(script, currentScript.nextSibling);
+} else {
+  // Fallback to document.head if no script element is found
+  document.head.appendChild(script);
+}
+</script>
+<!-- End of FlowHunt integration -->
 </body>
 </html>
